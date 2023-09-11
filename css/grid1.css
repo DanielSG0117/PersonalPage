@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 0;
+}
+
+/* estilo del elemento body*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-align: justify;
+}
+
+/*Header*/
+.grid-container .header{
+    padding: 20px;
+    text-align: center;
+    background: #6c2343;
+    color: #DCD;
+    grid-column: span 5;
+}
+
+/* Estilos en la barra de navegación*/
+.grid-container .navbar{
+    grid-column: span 5;
+    background-color: #333;
+    padding-bottom: 5px !important;
+}
+
+/*Estilos a los los elemetnos a de la barra de navegación*/
+.navbar a{
+    float: left;
+    display: block;
+    color: #DCD;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/*Cmabio de color con Hover*/
+.navbar a:hover{
+    background-color: #DCD;
+    color: black;
+}
+/*Grid-container*/
+.grid-container{
+    display: grid;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    grid-template-columns: repeat(5, 0.5fr);
+}
+
+
+
+/*Sidebar-Right*/
+.grid-container  .side {
+    grid-column: span 1;
+    flex: 20%;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    border: white solid 5px;
+    border-bottom: white solid 5px;
+    border-top: white solid 5px;
+    border-right: 0;
+}
+
+.side h2,
+.side h3{
+    color: white;
+    text-align: center;
+}
+/*Estilos en la barra de navegacion de Sidebar*/
+.navbar-side{
+    display: flex;
+    flex-direction: column; 
+      
+}
+
+.navbar-side a{
+    color: #DCD;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: justify;
+}
+
+.navbar-side a:hover{
+    background-color: #6c2343;
+    color: #DCD;
+}
+
+/*Main*/
+.grid-container .main{
+    grid-column: span 4;
+    background-color: #efefef;
+    padding: 20px;
+    border-bottom: white solid 5px;
+    border-top: white solid 5px;
+    border-right: 5px white solid;
+}
+
+.main h1, 
+.main h2, 
+.main h3{
+    text-align: center;
+    color: #6c2343;
+}
+
+/*CSS a los related-post*/
+.related-post p{
+    text-align: center;
+}
+.related-post img, iframe, video{
+    width: 250px;
+    height: 150px;
+}
+
+.container > .related-post {
+    background: #2d3436;
+    color: #ffffff;
+    height: 280px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    text-align: center;
+}
+
+.container > .related-post:hover {
+    cursor: pointer;
+    color: #000000;
+    background: #ffffff;
+}
+
+
+
+/*footer*/
+
+.grid-container .footer {
+    grid-column: 1/6;
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+ /*Estilo para el elemento ul*/
+ul{
+    list-style-type: circle;
+    padding-left: 2.6em;
+}
+/*Estilo para imagenes*/
+.img-right{
+    float: right;
+    width: 240px;
+    height: 300px;
+    padding: 10px;
+}
+
+.redimencion{
+    width: 240px;
+    height: 300px;
+    padding: 10px;
+}
+
+/*clase Center para centras objetos*/
+.flex-container .main .center{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+/*Estilos para el elemento hr*/
+hr{
+    border: #6c2343 solid;
+    padding: 0%;
+}
+
+a {
+    transition: 0.3s;
+    color: #DCD;
+    text-decoration: none;
+}
+
+a:hover{
+    color: cornflowerblue;
+}
+
+a[target="_blank"]{
+    cursor: help;
+}
+/*Elemtos de resposividad*/
+@media screen and (max-width: 768px) {
+    .header{
+        text-align: center;
+    }
+
+    .grid-container .main {
+        grid-column: 1/-1;
+    }
+
+    .grid-container .side {
+        grid-column: 1/-1;
+    }
+
+    .container .related-post{
+        grid-column: 1/-1;
+    }
+    .footer{
+        grid-column: 1/-1;
+    }
+    .grid-container a{
+        float: none;
+    }
+
+    .navbar-side a{
+        text-align: center;
+    }
+    .img-righr{
+        float: none;
+        width: auto;
+    }
+   
+}

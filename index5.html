@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/flexbox2.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <title>Comentario</title>
+</head>
+
+<body>
+    <div class="header" id="header">
+        <h1>Práctica 3</h1>
+        <h2>Suarez Gonzalez Daniel</h2>
+    </div>
+
+    <div class="navbar">
+        <a href="./index.html">¿Quién soy?</a>
+        <a href="./index6.html">¿Qué me gusta?</a>
+        <a href="./index11.html">Planes</a>
+        <a href="./index16.html">Sueños</a>
+        <a href="./index21.html">Información adicional</a>
+    </div>
+
+    <div class="flex-container">
+        <div class="side">
+            <h3>Contenido de sección</h3>
+            <h2>¿Quién soy?</h2>
+            <div class="navbar-side">
+                <a href="./index.html">About Me</a>
+                <a href="./index2.html">Autobiografia</a>
+                <a href="./index3.html">FODA</a>
+                <a href="./index4.html">Misión y Visión</a>
+                <a href="./index5.html">Déjame tu comentario</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <h2>Deja un comentario</h2>
+            <form>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="australia">México</option>
+                            <option value="usa">USA</option>
+                            <option value="canada">Canada</option>
+                            <option value="australia">Australia</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+            </form>
+
+
+        </div>
+        <div class="side-right">
+            <h2>Contacto</h2>
+            <hr>
+            <br>
+            <p>Location: Mexico City</p>
+            <br>
+            <p>Tel: 5555555555</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ad rem labore natus maxime facilis nisi
+                molestiae ea reprehenderit laudantium, enim deleniti officiis distinctio amet aspernatur cumque hic
+                perspiciatis error?</p>
+            <br><br>
+            
+            <a href="https://soundcloud.com/mr_nighters" target="_blank">Mr_Nighters.com</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="#header" id="a-especial">Regresar al inicio</a>
+        <br><br>
+        <hr>
+        <strong><p>© 2017–2021 INSTITUTO POLITÉCNICO NACIONAL</p></strong>
+    </div>
+
+</body>
+
+</html>

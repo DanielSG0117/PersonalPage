@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 0;
+}
+
+/* estilo del elemento body*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-align: justify;
+}
+
+/*Header*/
+.grid-container .header{
+    padding: 20px;
+    text-align: center;
+    background: #6c2343;
+    color: #DCD;
+    grid-column: span 5;
+}
+
+/* Estilos en la barra de navegación*/
+.grid-container .navbar{
+    grid-column: span 5;
+    background-color: #333;
+
+}
+
+/*Estilos a los los elemetnos a de la barra de navegación*/
+.navbar a{
+    float: left;
+    display: block;
+    color: #DCD;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/*Cmabio de color con Hover*/
+.navbar a:hover{
+    background-color: #DCD;
+    color: black;
+}
+/*Grid-container*/
+.grid-container{
+    display: grid;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    grid-template-columns: repeat(5, 0.5fr);
+}
+
+
+
+/*Sidebar-Right*/
+.grid-container  .side {
+    grid-column: span 1;
+    grid-row: span 2;
+    flex: 20%;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    border: white solid 5px;
+    border-bottom: white solid 5px;
+    border-top: white solid 5px;
+    border-right: 0;
+}
+
+.side h2,
+.side h3{
+    color: white;
+    text-align: center;
+}
+/*Estilos en la barra de navegacion de Sidebar*/
+.navbar-side{
+    display: flex;
+    flex-direction: column; 
+      
+}
+
+.navbar-side a{
+    color: #DCD;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: justify;
+}
+
+.navbar-side a:hover{
+    background-color: #6c2343;
+    color: #DCD;
+}
+
+/*Main1*/
+.grid-container .main1{
+    grid-column: span 4;
+    grid-row: span 1;
+    background-color: #efefef;
+    padding: 20px;
+    border-bottom: white solid 5px;
+    border-top: white solid 5px;
+    border-right: 5px white solid;
+}
+
+.main1 h1, 
+.main1 h2, 
+.main1 h3{
+    text-align: center;
+    color: #6c2343;
+}
+
+/*Main2*/
+.grid-container .main2{
+    grid-column: span 4;
+    grid-row: span 1;
+    background-color: #efefef;
+    padding: 20px;
+    border-bottom: white solid 5px;
+    border-top: white solid 5px;
+    border-right: 5px white solid;
+}
+
+
+.main2 h1, 
+.main2 h2, 
+.main2 h3{
+    text-align: center;
+    color: #6c2343;
+}
+
+/*footer*/
+
+.grid-container .footer {
+    grid-column: 1/6;
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+ /*Estilo para el elemento ul*/
+ul{
+    list-style-type: circle;
+    padding-left: 2.6em;
+}
+/*Estilo para imagenes*/
+.img-right{
+    float: right;
+    width: 240px;
+    height: 300px;
+    padding: 10px;
+}
+
+.redimencion{
+    width: 240px;
+    height: 300px;
+    padding: 10px;
+}
+
+/*clase Center para centras objetos*/
+.main1 .center,
+.main2 .center {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+/*Estilos para el elemento hr*/
+hr{
+    border: #6c2343 solid;
+    padding: 0%;
+}
+/*Estilo al elemento a*/
+a {
+    transition: 0.3s;
+    color: #DCD;
+    text-decoration: none;
+}
+
+a:hover{
+    color: cornflowerblue;
+}
+
+a[target="_blank"]{
+    cursor: help;
+}
+
+/*Estilos para el texto-especial*/
+#texto-especial{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*Elemtos de resposividad*/
+@media screen and (max-width: 768px) {
+    .header{
+        text-align: center;
+    }
+
+    .grid-container .main1 {
+        grid-column: 1/-1;
+    }
+
+    .grid-container .main2 {
+        grid-column: 1/-1;
+    }
+
+    .grid-container .side {
+        grid-column: 1/-1;
+    }
+
+    .container .related-post{
+        grid-column: 1/-1;
+    }
+    .footer{
+        grid-column: 1/-1;
+    }
+    .grid-container a{
+        float: none;
+    }
+
+    .navbar-side a{
+        text-align: center;
+    }
+    .img-righr{
+        float: none;
+        width: auto;
+    }
+   
+}
+
+@media screen and (max-width: 411px) {
+    .img-right{
+        float: none;
+        width: 100%;
+    }
+
+    img{
+        width: 50%;
+    }
+}

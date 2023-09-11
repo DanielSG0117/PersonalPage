@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 0;
+}
+
+/* estilo del elemento body*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-align: justify;
+}
+
+/*Header/logo Title*/
+.header{
+    padding: 20px;
+    text-align: center;
+    background: #6c2343;
+    color: #DCD;
+}
+
+/* Estilos en la barra de navegación*/
+.navbar{
+    display: flex;
+    background-color: #333;
+}
+
+/*Estilos a los los elemetnos a de la barra de navegación*/
+.navbar a{
+    color: #DCD;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*Cmabio de color con Hover*/
+.navbar a:hover{
+    background-color: #DCD;
+    color: black;
+}
+
+/*Flexbox Container*/
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0%;
+    border: white solid 5px;
+
+
+}
+
+/*Sidebar*/
+.side{
+    flex: 20%;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+}
+
+.side h2,
+.side h3{
+    color: white;
+    text-align: center;
+}
+
+/*Estilos en la barra de navegacion de Sidebar*/
+.navbar-side{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-side a{
+    color: #DCD;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: justify;
+}
+
+.navbar-side a:hover{
+    background-color: #6c2343;
+    color: #DCD;
+}
+
+
+/*Main*/
+.main{
+    flex: 60%;
+    background-color: #efefef;
+    padding: 20px;
+}
+
+.main h1, 
+.main h2, 
+.main h3{
+    text-align: center;
+    color: #6c2343;
+}
+
+/*Sidebar-Right*/
+
+.side-right{
+    flex: 20%;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    text-align: justify;
+}
+
+.side-right h1,
+.side-right h2, 
+.side-right h3, 
+.side-right h4{
+    color: #DCD;
+    text-align: center;
+}
+
+.flex-container .side-right img{
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.flex-container .side-right iframe{
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+
+/*Footer*/
+.footer{
+    padding-top: 5px;
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    color: white !important;
+}
+
+/*Estilo para el elemento ul*/
+ul{
+    list-style-type: circle;
+    padding-left: 2.6em;
+}
+/*Estilo para imagenes*/
+.img-right{
+    float: right;
+    width: 240px;
+    height: 300px;
+    padding: 10px;
+}
+
+.redimencion{
+    width: 100%px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 2em;
+}
+
+.redimencion-horizontal{
+    width: 300px;
+    height: 240px;
+}
+
+/*clase Center para centras objetos*/
+.flex-container .main .center{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+/*Estilos para el elemento hr*/
+hr{
+    border: #6c2343 solid;
+    padding: 0%;
+}
+
+a {
+    transition: 0.3s;
+    color: #DCD;
+    text-decoration: none;
+}
+
+a:hover{
+    color: cornflowerblue;
+}
+
+a[target="_blank"]{
+    cursor: help;
+}
+
+/*Estilo para que un imagen se coloque del lado izquierdo*/
+/*Responsividad cuando la pantalla sea menos a 768px*/
+@media screen and (max-width: 768px) {
+    .flex-container, .navbar{
+        flex-direction: column;
+    }
+    .flex-container .side-right img{
+        width: 100%;
+    }
+
+    .flex-container .side, .main, .side-right{
+        flex-direction: column;
+    }
+
+    .navbar-side a{
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 411px) {
+    img{
+        width: 50%;
+    }
+    .redimencion{
+        width: 100%;
+        height: 240px;
+    }
+
+    .redimencion-horizontal{
+        width: 100%;
+        height: 240px;
+    }
+}

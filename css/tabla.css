@@ -1,0 +1,50 @@
+/*CSS al elemento tabla*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+  
+th, td {
+    border: solid 1px #eee;
+    padding: 1px;
+}
+  
+th {
+    background-color: #333;
+    color: white;
+}
+
+td{
+    width: 33.33%;
+}
+  
+tr:nth-child(even){
+    background-color: #eee;
+}
+  
+tr:hover{
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+/*Estilos para las imagenes dentro de la tabla*/
+table  img{
+    width: 240px;
+    height: 180px;
+
+}
+
+
+
+/*Estilo para que un imagen se coloque del lado izquierdo*/
+/*Responsividad cuando la pantalla sea menos a 700px*/
+@media screen and (max-width: 700px) {
+
+    table{
+        display: block;
+        overflow-x: auto;
+    }
+   
+}
